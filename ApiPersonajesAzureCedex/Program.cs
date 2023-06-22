@@ -19,7 +19,7 @@ builder.Services.AddSwaggerGen(options =>
     options.SwaggerDoc("v1", new OpenApiInfo
     {
         Title = "Api Azure Series Personajes Cedex",
-        Description = "Series y Personajes SQL Server",
+        //Description = "Series y Personajes SQL Server",
         Version = "v1"
     });
 });
@@ -29,8 +29,8 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI(options =>
 {
-    options.SwaggerEndpoint(url: "/swagger/v1/swagger.json", name: "Api V1 Series Azure");
-    options.RoutePrefix = "";
+    options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
+    options.RoutePrefix = string.Empty;
 });
 
 // Configure the HTTP request pipeline.

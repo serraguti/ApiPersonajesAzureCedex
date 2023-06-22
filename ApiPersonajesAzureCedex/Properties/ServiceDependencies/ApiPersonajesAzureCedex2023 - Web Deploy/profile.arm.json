@@ -21,7 +21,7 @@
     },
     "resourceName": {
       "type": "string",
-      "defaultValue": "ApiPersonajesAzureCedex",
+      "defaultValue": "ApiPersonajesAzureCedex2023",
       "metadata": {
         "description": "Name of the main resource to be created by this template."
       }
