@@ -63,7 +63,7 @@ namespace ApiPersonajesAzureCedex.Repositories
             await this.context.SaveChangesAsync();
         }
 
-        public async Task UpdatePersonajeSerie(int idpersonaje, int idserie)
+        public async Task UpdatePersonajeSerieAsync(int idpersonaje, int idserie)
         {
             Personaje personaje = await this.FindPersonajeAsync(idpersonaje);
             personaje.IdSerie = idserie;
