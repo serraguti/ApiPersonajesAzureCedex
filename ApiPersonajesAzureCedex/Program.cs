@@ -19,7 +19,7 @@ builder.Services.AddSwaggerGen(options =>
     options.SwaggerDoc("v1", new OpenApiInfo
     {
         Title = "Api Azure Series Personajes Cedex",
-        //Description = "Series y Personajes SQL Server",
+        Description = "Series y Personajes SQL Server",
         Version = "v1"
     });
 });
